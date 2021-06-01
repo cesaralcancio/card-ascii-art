@@ -7,7 +7,7 @@ This is a project to represent a card illustration using ascii.
 Add to the dependencies:
 
 ```clojure
-[org.clojars.cesaralcancio/card-ascii-art "0.2.0"]
+[org.clojars.cesaralcancio/card-ascii-art "0.3.0"]
 ```
 
 Example:
@@ -28,12 +28,18 @@ How to use:
 (ns my-namespace.my-file
   (:require [card-ascii-art.core :as card-core]))
 
-(card-core/art-print {:cards       [1 2 10 11 12 13 "X"]
-                      :player-name "Cesar"
-                      :points      21})
+(card-core/print-cards [1 2 10 13 "X"])
+
+(card-core/print-card 3)
+
+(card-core/print-card 13)
+
+(card-core/print-player {:cards       [1 2 10 13 "X"]
+                         :player-name "Cesar Alcancio"
+                         :points      26})
 ```
 
-![alt text](resources/sample.png)
+![alt text](resources/sample-v2.png)
 
 ## License
 

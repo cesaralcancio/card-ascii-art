@@ -2,9 +2,12 @@
   (:require [clojure.test :refer :all]
             [card-ascii-art.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (art-print {:cards       [1 2 10 11 12 13 "X"]
-                :player-name "Cesar"
-                :points      21})
-    (is (= 1 1))))
+(print-cards [1 2 10 13 "X"])
+
+(print-card 3)
+
+(print-card 13)
+
+(print-player {:cards [1 2 10 13 "X"]
+              :player-name "Cesar Alcancio"
+              :points 26})
