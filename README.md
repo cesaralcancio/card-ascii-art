@@ -2,6 +2,8 @@
 
 This is a project to represent a card illustration using ascii.
 
+Project on [Clojars](https://clojars.org/org.clojars.cesaralcancio/card-ascii-art/versions/0.3.0)
+
 ## Usage
 
 Add to the dependencies:
