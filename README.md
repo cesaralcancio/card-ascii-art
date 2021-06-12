@@ -9,7 +9,13 @@ Project on [Clojars](https://clojars.org/org.clojars.cesaralcancio/card-ascii-ar
 Add to the dependencies:
 
 ```clojure
-[org.clojars.cesaralcancio/card-ascii-art "0.3.0"]
+[org.clojars.cesaralcancio/card-ascii-art "0.4.0"]
+```
+
+Versions:
+```clojure
+0.3.0 -> Added print-cards, print-card and print-player
+0.4.0 -> Added print-masked-player that hides the first card and the points of the player
 ```
 
 Example:
