@@ -37,6 +37,18 @@
     "X" (print "│░░░░░░░│")
     (print (format "│   %s   │" (random-symbol)))))
 
+(defn- mask-first-card [cards]
+  "Masks the first card of the vector"
+  (apply vector (-> list
+                    (apply (subvec cards 1))
+                    (conj "X"))))
+
+(defn- show-masked [player]
+  "Returns player masked"
+  (-> player
+      (update :cards mask-first-card)
+      (assoc :points "X")))
+
 (defn print-cards [cards]
   (let [quantity-cards (count cards)]
     (dotimes [n quantity-cards]
@@ -65,3 +77,6 @@
     (print-cards cards))
   (println (:points player) "points")
   (println "--------------"))
+
+(defn print-masked-player [player]
+  (print-player (show-masked player)))
