@@ -1,8 +1,8 @@
 # card-ascii-art
 
-This is a project to represent a card illustration using ascii.
+[![Clojars Project](https://img.shields.io/clojars/v/org.clojars.cesaralcancio/card-ascii-art.svg)](https://clojars.org/org.clojars.cesaralcancio/card-ascii-art)
 
-Project on [Clojars](https://clojars.org/org.clojars.cesaralcancio/card-ascii-art/versions/0.3.0)
+This is a project to represent a card illustration using ascii.
 
 ## Usage
 
